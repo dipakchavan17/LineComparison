@@ -10,6 +10,10 @@ namespace LineComparison
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("welcome ");
+            LineComparison lc=new LineComparison();
+            lc.length_line();
+            Console.ReadLine();
         }
     }
 }
