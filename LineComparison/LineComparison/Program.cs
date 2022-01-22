@@ -13,7 +13,7 @@ namespace LineComparison
             Console.WriteLine("welcome ");
             LineComparison lc=new LineComparison();
             lc.length_line();
-            lc.function_check();
+            lc.Comparelines();
             Console.ReadLine();
         }
     }

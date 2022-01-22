@@ -18,6 +18,7 @@ namespace LineComparison
         public int R_Two;
         public double Length_XY;
         public double Length_SR;
+        
         public void length_line()
         {
 
@@ -49,18 +50,23 @@ namespace LineComparison
             Console.WriteLine("Length of Value 2 is: " + Length_SR);
 
         }
-        public void function_check()
+        public void Comparelines()
         {
-            bool equal_result = Length_XY.Equals(Length_SR);
-
-            if (equal_result == false)
-                Console.WriteLine(" Length of XY and Length of SR are NOT Equal");
-            else
-                Console.WriteLine("Length of XY and Length of SR are Equal");
+            double Differene = Length_XY.CompareTo(Length_SR);
+            if (Differene < 0)
+            {
+                Console.WriteLine("Length of XY is less than Length of SR");
+            }
+            if (Differene > 0)
+            {
+                Console.WriteLine("Length of XY is greater than Length of SR");
+            }
+            if (Differene == 0)
+            {
+                Console.WriteLine("Length of XY is equal to Length of SR");
+            }
             Console.ReadKey();
-
         }
     }
 }
-
 
